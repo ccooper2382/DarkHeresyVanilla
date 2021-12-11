@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="h-full w-full">
+<head>
+    <title>Dark Heresy Reference</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="dist/output.css" media="screen"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="DarkHeresy.js"></script>
+</head>
+<body class="max-w-4xl mx-auto">
+<header class=" p-8 bg-gray-300 h-44">
+    <div class="grid grid-cols-5  max-h-full">
+        <h1 class="col-span-3 text-4xl ">Dark Heresy Reference</h1>
+        <div class="col-span-2 max-h-full">
+            <img src="Inquisiton.png" class="h-1/4">
+        </div>
+    </div>
+</header>
+
+<div class="grid grid-cols-6">
+    <nav id="verticalNav" class="col-span-1 bg-gray-100 min-h-screen">
+     <a href="#">Home</a>
+        <button id="characterCreation" class="dropdown-btn">Character Creation</button>
+            <div class="dropdown-container">
+                <ul>
+                    <li><a>Homeworld</a></li>
+                    <li><a>Generate Characteristics</a></li>
+                    <li><a>Determine Career Path</a></li>
+                    <li><a>Spend XP buy Equipment</a></li>
+                </ul>
+            </div>
+    </nav>
+    <article id="content" class="col-span-5 p-1.5">
+
+    </article>
+</div>
+</body>
+</html>

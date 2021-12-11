@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="font-bold">
+  <li><a href="index.html">Home</a></li>
+
+  <li id="careerpaths" class="" >Career Paths
+    <div class="navContainer">
+      <ul>
+        <li>
+          <a href="CareerPaths/Adept/Character_Adept.html" data-name="adept">Adept</a>
+        </li>
+        <li>
+          <a href="CareerPaths/Assassin/assassin.html" data-name="assassin">Assassin</a>
+        </li>
+        <li>
+          <a href="CareerPaths/Psyker/Psyker.html" data-name="psyker" onclick="">Psyker</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+</ul>
+</body>
+</html>
+
+let container = document.querySelector('.navContainer');
+//I tried to use jquery for this but it didn't work. perhaps something to try another time
+container.addEventListener('click', function (e) {
+if (e.target !== e.currentTarget) {
+e.preventDefault();
+let page = e.target.getAttribute('href');
+loadDoc(page);
+history.pushState(page, null, null);
+
+}
+
+}, false);
